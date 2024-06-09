@@ -1,0 +1,21 @@
+.header{
+  .header_flex{
+    margin: 0 auto;
+    max-width: 1440px;
+    .header_content{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 60px;
+      width: 100%;
+      // background-color: darkorange;
+
+      .routes_div{
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+}

@@ -3,7 +3,7 @@
 
 import React, { useEffect, useState } from "react";
 import style from "./HomePageNew.module.scss";
-
+import '../../scss/index.scss';
 
 
 export const HomePageNew = ({

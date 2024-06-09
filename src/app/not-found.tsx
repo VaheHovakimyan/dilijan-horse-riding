@@ -8,9 +8,6 @@ import Link from "next/link";
 
 export const Custom404 = () => {
 
-
-    
-
     return(
         <div >
             <div className="container">

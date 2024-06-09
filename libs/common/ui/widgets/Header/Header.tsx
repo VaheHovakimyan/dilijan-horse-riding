@@ -1,19 +1,16 @@
 'use client'
 
-import React, { useEffect, useRef, useState } from "react";
-import Link from "next/link";
-
+import React from "react";
 import style from "./Header.module.scss";
-import cl from "classnames";
-
-
+import Image from "next/image";
+import header_logo from '../../assets/images/header_logo.jpg';
 
 
 export const HeaderNew = ({
 
 }: {
- 
-}) => {
+
+  }) => {
 
   const langList = [
     { name: "Arabic", code: "ar", label: "AR" },
@@ -26,25 +23,28 @@ export const HeaderNew = ({
   ];
 
   return (
-    <>
-      <header
-       
-      >
-        <Link
-          className={cl(
-            style.header__logo,
-           
-          )}
-          href="/"
-        >
-          homepage link
-        </Link>
-
-
-
-        header 
+    <div className={style.header}>
+      <header>
+        <div className={style.header_flex}>
+          <div className={style.header_content}>
+              <Image
+                src={header_logo}
+                width={165}
+                height={70}
+                alt="header logo"
+              />
+            <div className={style.routes_div}>
+              <p>Home</p>
+              <p>Our Services</p>
+              <p>Gallery</p>
+              <p>Our Horses</p>
+              <p>About us</p>
+            </div>
+            <div>Contact</div>
+          </div>
+        </div>
       </header>
-    </>
+    </div>
   );
 };
 

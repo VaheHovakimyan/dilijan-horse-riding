@@ -13,12 +13,7 @@ export default function Home({
 }) {
   return (
     <>
-
-
-      <HomePageNew
-       
-
-      />
+      <HomePageNew/>
     </>
   );
 }
