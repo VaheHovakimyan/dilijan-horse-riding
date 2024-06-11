@@ -1,4 +1,4 @@
 
-export * from "./Header";
+export * from "../shared/Header";
 
-export * from "./Footer";
+export * from "../shared/Footer";
