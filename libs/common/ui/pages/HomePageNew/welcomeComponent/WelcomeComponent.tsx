@@ -14,12 +14,10 @@ export const WelcomeComponent = ({ }: {}) => {
         <div className={style.welcome_content}>
           <h1 className={style.welcome_content_title}>Dilijan Horse Riding</h1>
           <p className={style.welcome_content_description}>
-            some text some text some text some text some text some
-            text some text some text some text some text some text 
-            some text some text some text some text some text some
-            text some text some text some text some text some text 
-            some text some text some text some text some text some 
-            text some text some text
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Repellendus non culpa perspiciatis ad id ab. Sint error
+            inventore possimus? Enim ducimus fugit ratione eius a
+            facilis totam voluptas sint esse?
           </p>
           <button className={style.welcome_content_btn}>More</button>
         </div>

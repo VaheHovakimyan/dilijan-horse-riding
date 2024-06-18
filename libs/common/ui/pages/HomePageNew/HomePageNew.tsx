@@ -5,6 +5,8 @@ import React from "react";
 import style from "./HomePageNew.module.scss";
 import '../../scss/index.scss';
 import WelcomeComponent from './welcomeComponent/WelcomeComponent';
+import OurServicesHome from "./ourServices/OurServicesHome";
+import SloganHome from "./sloganHome/SloganHome";
 
 export const HomePageNew = ({
 
@@ -17,6 +19,10 @@ export const HomePageNew = ({
     <>
      
      <WelcomeComponent />
+
+     <OurServicesHome />
+
+     <SloganHome />
 
       {/* <div className={style.wrapper_bg}>
         <div className={style.wrapper}>
