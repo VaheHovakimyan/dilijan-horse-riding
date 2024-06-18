@@ -1,10 +1,8 @@
 'use client'
 
 import style from "./OurServicesHome.module.scss";
-import image from '../../../assets/images/home_main_background_.jpg';
+import image from '../../../assets/images/home_main_background.jpg';
 
-
-// const image = '../../../assets/images/header_logo.jpg';
 
 const ourServices = [
   {
