@@ -7,32 +7,32 @@ import image from '../../../assets/images/home_main_background.jpg';
 const ourServices = [
   {
     id: Math.random(),
-    image: image,
+    image: image.src,
     title: "Horse Riding",
   },
   {
     id: Math.random(),
-    image: image,
+    image: image.src,
     title: "Jeeping",
   },
   {
     id: Math.random(),
-    image: image,
+    image: image.src,
     title: "Photography",
   },
   {
     id: Math.random(),
-    image: image,
+    image: image.src,
     title: "Travel tour",
   },
   {
     id: Math.random(),
-    image: image,
+    image: image.src,
     title: "Hiking",
   },
   {
     id: Math.random(),
-    image: image,
+    image: image.src,
     title: "Pop Corn",
   },
 ];
@@ -45,7 +45,7 @@ export const OurServicesHome = ({ }: {}) => {
       <div className={style.our_services_home_flex}>
         {ourServices.map((item) => {
           return (
-            <div key={item.id} style={{ backgroundImage: `url('${item.image.src}')` }} className={style.our_services_home_item}>
+            <div key={item.id} style={{ backgroundImage: `url('${item.image}')` }} className={style.our_services_home_item}>
               <div className={style.our_services_home_item_opacity}>
                 <p className={style.our_services_home_item_p}>{item.title}</p>
               </div>
