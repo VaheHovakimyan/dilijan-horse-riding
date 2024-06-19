@@ -6,8 +6,12 @@ import cl from "classnames";
 
 import Link from "next/link";
 
-export const Custom404 = () => {
+export function NotFound ({
 
+}: {
+
+
+}) {
     return(
         <div >
             <div className="container">
@@ -34,4 +38,4 @@ export const Custom404 = () => {
     )
 }
 
-export default Custom404;
+export default NotFound;
