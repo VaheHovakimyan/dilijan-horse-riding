@@ -1,38 +1,38 @@
 'use client'
 
 import style from "./OurServicesHome.module.scss";
-import image from '../../../assets/images/home_main_background.jpg';
+// import image from '../../../assets/images/home_main_background.jpg';
 
 
 const ourServices = [
   {
     id: Math.random(),
-    image: image.src,
+    image: "/home_main_background.jpg",
     title: "Horse Riding",
   },
   {
     id: Math.random(),
-    image: image.src,
+    image: "/home_main_background.jpg",
     title: "Jeeping",
   },
   {
     id: Math.random(),
-    image: image.src,
+    image: "/home_main_background.jpg",
     title: "Photography",
   },
   {
     id: Math.random(),
-    image: image.src,
+    image: "/home_main_background.jpg",
     title: "Travel tour",
   },
   {
     id: Math.random(),
-    image: image.src,
+    image: "/home_main_background.jpg",
     title: "Hiking",
   },
   {
     id: Math.random(),
-    image: image.src,
+    image: "/home_main_background.jpg",
     title: "Pop Corn",
   },
 ];
