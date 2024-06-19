@@ -52,10 +52,11 @@ export const OurHorsesHome = ({ }: {}) => {
   return (
     <div className={style.our_horses_home_main}>
       <div className={style.our_horses_home_main_flex}>
+        <h2 className={style.our_horses_home_main_title}>Our horses</h2>
         <div className={style.our_horses_home_div_flex}>
           {ourHorses.map((horse) => {
             return (
-              <div>
+              <div className={style.our_horses_home_div_item}>
                 <img src={horse.image.src} alt="horse_image" className={style.our_horses_home_horse_image} />
                 <p className={style.our_horses_home_horse_p}>{horse.title}</p>
                 <span className={style.our_horses_home_horse_span}>{horse.description}</span>
