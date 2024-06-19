@@ -4,7 +4,6 @@ import style from "./SloganHome.module.scss";
 
 
 export const SloganHome = ({ }: {}) => {
-
   return (
     <div className={style.slogan_home_main}>
       <div className={style.slogan_home_opacity}>

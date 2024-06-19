@@ -3,7 +3,6 @@
 
 import React from "react";
 import style from "./WelcomeComponent.module.scss";
-// import '../../scss/index.scss';
 
 
 export const WelcomeComponent = ({ }: {}) => {

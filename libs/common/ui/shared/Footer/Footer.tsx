@@ -7,7 +7,12 @@ import Image from "next/image";
 
 import style from "./Footer.module.scss";
 
-export const FooterNew = () => {
+export const Footer = ({
+
+}: {
+
+
+}) => {
 
   return (
     <>
@@ -20,4 +25,4 @@ export const FooterNew = () => {
   );
 };
 
-export default FooterNew;
+export default Footer;
