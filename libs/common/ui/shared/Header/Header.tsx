@@ -8,7 +8,7 @@ import facebook_icon from '../../assets/icons/social/facebook_icon.svg';
 import instagram_icon from '../../assets/icons/social/instagram_icon.svg';
 import en_icon from '../../assets/icons/flags/en_icon.svg';
 
-export const HeaderNew = ({
+export const Header = ({
 
 }: {
 
@@ -65,4 +65,4 @@ export const HeaderNew = ({
   );
 };
 
-export default HeaderNew;
+export default Header;
