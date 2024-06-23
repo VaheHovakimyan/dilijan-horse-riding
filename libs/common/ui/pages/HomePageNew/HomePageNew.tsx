@@ -7,7 +7,8 @@ import '../../scss/index.scss';
 import WelcomeComponent from './welcomeComponent/WelcomeComponent';
 import OurServicesHome from "./ourServices/OurServicesHome";
 import SloganHome from "./sloganHome/SloganHome";
-import OurHorsesHome from "./ourHorses/OurHorses";
+import OurHorsesHome from "./ourHorses/OurHorsesHome";
+import GalleryHome from "./galleryHome/galleryHome";
 
 export const HomePageNew = ({
 
@@ -26,14 +27,9 @@ export const HomePageNew = ({
       <SloganHome />
 
       <OurHorsesHome />
-      {/* <div className={style.wrapper_bg}>
-        <div className={style.wrapper}>
 
-          hello world in main page 
-        </div>
-
-    
-      </div> */}
+      <GalleryHome />
+      
     </>
   );
 };
