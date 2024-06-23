@@ -8,7 +8,7 @@ import WelcomeComponent from './welcomeComponent/WelcomeComponent';
 import OurServicesHome from "./ourServices/OurServicesHome";
 import SloganHome from "./sloganHome/SloganHome";
 import OurHorsesHome from "./ourHorses/OurHorsesHome";
-import GalleryHome from "./galleryHome/galleryHome";
+import GalleryHome from "./galleryHome/GalleryHome";
 
 export const HomePageNew = ({
 
