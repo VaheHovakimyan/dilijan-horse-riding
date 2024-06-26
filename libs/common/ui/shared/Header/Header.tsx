@@ -33,8 +33,8 @@ export const Header = ({
           <div className={style.header_content}>
             <Image
               src={header_logo}
-              width={165}
-              height={70}
+              width={205}
+              height={90}
               alt="header logo"
             />
             <div className={style.routes_div}>
