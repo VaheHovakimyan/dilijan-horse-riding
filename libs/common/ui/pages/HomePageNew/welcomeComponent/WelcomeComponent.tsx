@@ -18,7 +18,7 @@ export const WelcomeComponent = ({ }: {}) => {
             inventore possimus? Enim ducimus fugit ratione eius a
             facilis totam voluptas sint esse?
           </p>
-          <button className={style.welcome_content_btn}>More</button>
+          <button className={style.welcome_content_btn}>Our Services</button>
         </div>
       </div>
     </div>

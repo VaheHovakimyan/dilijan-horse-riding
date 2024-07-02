@@ -1,6 +1,6 @@
 // Imports
 
-@import '../../../scss/variables/colors.scss';
+@import "../../../scss/variables/colors.scss";
 
 // Style
 
@@ -21,25 +21,45 @@
     align-items: center;
     gap: 16px;
     .our_services_home_item {
-      width: calc(calc(100% / 3) - 30px);
+      width: 100%;
+      min-width: 200px;
+      max-width: 450px;
       height: 300px;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
       border-radius: 16px;
+      cursor: pointer;
+      overflow: hidden;
       .our_services_home_item_opacity {
         display: flex;
         justify-content: center;
         align-items: center;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         border-radius: 16px;
-        .our_services_home_item_p{
+        transition: all 0.4s linear;
+        .our_services_home_item_p_center{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+          height: 100%;
+          background-color: rgba(0, 0, 0, 0.5);
+        .our_services_home_item_p {
           font-size: 32px;
           color: rgb(240, 240, 240);
           font-family: Verdana, serif;
+          text-transform: uppercase;
+          letter-spacing: 1px;
         }
+      }
+      }
+    }
+    .our_services_home_item:hover {
+      .our_services_home_item_opacity{
+        transition: all 0.3s linear;
+        transform: scale(1.15);
       }
     }
   }
