@@ -2,18 +2,12 @@
 
 import React, { useState, useEffect } from "react";
 import { useRouter } from "next/router";
-import cl from "classnames";
 import Image from "next/image";
 
 import style from "./Footer.module.scss";
 import footer_logo from '../../assets/images/header_logo.jpg';
 
-export const Footer = ({
-
-}: {
-
-
-  }) => {
+export const Footer = ({}: {}) => {
 
   return (
     <div className={style.footer_main}>
@@ -27,9 +21,9 @@ export const Footer = ({
           />
           <div className={style.footer_social_div}>
             <div className={style.footer_social_contacts_div}>
-              <p>Telephone: 099-99-99-99</p>
-              <p>Address: Dilijan</p>
-              <p>Email: DilijanHorseRiding@gmail.com</p>
+              <p>Telephone: (+374)77-97-73-34</p>
+              <p>Address: Dilijan, Village of Haghartsin</p>
+              <p>Email: dilijanhorseriding@gmail.com</p>
             </div>
           </div>
         </div>

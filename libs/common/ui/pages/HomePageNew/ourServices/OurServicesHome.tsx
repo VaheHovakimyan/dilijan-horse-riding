@@ -1,7 +1,6 @@
 'use client'
 
 import style from "./OurServicesHome.module.scss";
-// import image from '../../../assets/images/home_main_background.jpg';
 
 
 const ourServices = [
@@ -18,22 +17,22 @@ const ourServices = [
   {
     id: Math.random(),
     image: "/home_main_background.jpg",
-    title: "Photography",
+    title: "Teambuilding",
   },
   {
     id: Math.random(),
     image: "/home_main_background.jpg",
-    title: "Travel tour",
+    title: "Photoshoot",
   },
   {
     id: Math.random(),
     image: "/home_main_background.jpg",
-    title: "Hiking",
+    title: "Camping",
   },
   {
     id: Math.random(),
     image: "/home_main_background.jpg",
-    title: "Pop Corn",
+    title: "Quadro tours",
   },
 ];
 
@@ -45,9 +44,11 @@ export const OurServicesHome = ({ }: {}) => {
       <div className={style.our_services_home_flex}>
         {ourServices.map((item) => {
           return (
-            <div key={item.id} style={{ backgroundImage: `url('${item.image}')` }} className={style.our_services_home_item}>
-              <div className={style.our_services_home_item_opacity}>
-                <p className={style.our_services_home_item_p}>{item.title}</p>
+            <div key={item.id} className={style.our_services_home_item}>
+              <div className={style.our_services_home_item_opacity} style={{ backgroundImage: `url('${item.image}')` }} >
+                <div className={style.our_services_home_item_p_center}>
+                  <p className={style.our_services_home_item_p}>{item.title}</p>
+                </div>
               </div>
             </div>
           )

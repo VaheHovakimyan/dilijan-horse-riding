@@ -28,7 +28,9 @@ export const GalleryHome = ({ }: {}) => {
           <div className={style.gallery_home_main_item_opacity}></div>
         </div>
         <div className={style.gallery_home_main_item}>
-          <div className={style.gallery_home_main_item_opacity}></div>
+          <div className={style.gallery_home_main_item_opacity}>
+            <p className={style.gallery_home_main_item_opacity_last}>+ 343</p>
+          </div>
         </div>
       </div>
     </div>
