@@ -27,12 +27,15 @@
         align-items: stretch;
         margin-bottom: 80px;
         .our_horses_home_div_item {
+          border: 2px rgb(55, 55, 55) dashed;
+          border-radius: 50%;
+          transition: all 0.3s linear;
 
           .circle_div {
             width: 300px;
             height: 300px;
             border-radius: 50%;
-            background-image: url('../../../assets/images/horse_image.jpg');
+            background-image: url("../../../assets/images/horse_image.jpg");
             background-size: cover;
             background-position: center;
             background-clip: border-box;
@@ -54,21 +57,10 @@
               display: flex;
               justify-content: center;
               align-items: center;
-              .circle_div_name_span{
+              .circle_div_name_span {
                 font-size: 32px;
                 color: rgb(240, 240, 240);
                 opacity: 0;
-              }
-            }
-          }
-
-          .circle_div:hover {
-            border-radius: 16px;
-            .circle_div_name {
-              background-color: rgba(0, 0, 0, 0.35);
-              transform: translateY(-100%);
-              .circle_div_name_span{
-                opacity: 1;
               }
             }
           }
@@ -96,6 +88,20 @@
               -webkit-box-orient: vertical;
               font-weight: 400;
               color: rgb(55, 55, 55);
+            }
+          }
+        }
+
+        .our_horses_home_div_item:hover {
+          border-radius: 16px;
+          .circle_div {
+            border-radius: 16px;
+            .circle_div_name {
+              background-color: rgba(0, 0, 0, 0.35);
+              transform: translateY(-100%);
+              .circle_div_name_span {
+                opacity: 1;
+              }
             }
           }
         }

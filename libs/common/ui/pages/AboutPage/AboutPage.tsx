@@ -7,9 +7,7 @@ export const AboutPage = () => {
 
   return (
     <>
-
       <div className={style.wrapper}>
-
         about page
       </div>
     </>
