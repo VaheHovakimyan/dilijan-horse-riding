@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Footer, Header } from "../../libs/common/ui";
 import website_icon from '../../libs/common/ui/assets/icons/website_title_icons/website_title_icon.png';
+import AllRights from "../../libs/common/ui/shared/AllRights/AllRights";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -32,6 +33,7 @@ export default function RootLayout({
         </main>
       
         <Footer />
+        <AllRights />
         
         </body>
     </html>
