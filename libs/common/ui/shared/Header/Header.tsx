@@ -1,12 +1,13 @@
 'use client'
 
 import React from "react";
-import style from "./Header.module.scss";
 import Image from "next/image";
 import header_logo from '../../assets/images/header_logo.png';
 import facebook_icon from '../../assets/icons/social/facebook_icon.svg';
 import instagram_icon from '../../assets/icons/social/instagram_icon.svg';
 import en_icon from '../../assets/icons/flags/en_icon.svg';
+import style from "./Header.module.scss";
+
 
 export const Header = ({
 
