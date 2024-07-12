@@ -1,0 +1,26 @@
+// Imports
+
+@import "../../scss/variables/variables.scss";
+@import "../../scss/variables/breakpoints.scss";
+
+// Media
+
+@include Ipad_pro {
+  .footer_main {
+    .footer_main_flex {
+      flex-direction: column;
+      align-items: center;
+      .footer_logo_social_flex{
+        align-items: center;
+        .footer_social_div{
+          .footer_social_contacts_div{
+            text-align: center;
+          }
+          .footer_social_icons_div{
+            justify-content: center;
+          }
+        }
+      }
+    }
+  }
+}

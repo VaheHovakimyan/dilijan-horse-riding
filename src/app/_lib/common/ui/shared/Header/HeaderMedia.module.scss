@@ -1,0 +1,18 @@
+// Imports
+
+@import "../../scss/variables/variables.scss";
+@import "../../scss/variables/breakpoints.scss";
+
+// Media
+
+@include Laptop {
+  .header {
+    .header_flex {
+      .header_content {
+        .routes_div {
+          display: none;
+        }
+      }
+    }
+  }
+}

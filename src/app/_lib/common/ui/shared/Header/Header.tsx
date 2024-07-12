@@ -7,6 +7,7 @@ import facebook_icon from '../../assets/icons/social/facebook_icon.svg';
 import instagram_icon from '../../assets/icons/social/instagram_icon.svg';
 import en_icon from '../../assets/icons/flags/en_icon.svg';
 import style from "./Header.module.scss";
+import mediaStyle from './HeaderMedia.module.scss';
 
 
 export const Header = ({
@@ -25,20 +26,25 @@ export const Header = ({
     { name: "Korean", code: "ko", label: "KOR" },
   ];
 
-  const faFacebookF = "facebook-f"
+  const faFacebookF = "facebook-f";
+
+  const midHeader = `${style.routes_div} ${mediaStyle.routes_div}`;
+
+  console.log();
+  
 
   return (
-    <div className={style.header}>
+    <div className={`${style.header} ${mediaStyle.header}`}>
       <header>
-        <div className={style.header_flex}>
-          <div className={style.header_content}>
+        <div className={`${style.header_flex} ${mediaStyle.header_flex}`}>
+          <div className={`${style.header_content} ${mediaStyle.header_content}`}>
             <Image
               src={header_logo}
               width={205}
               height={90}
               alt="header logo"
             />
-            <div className={style.routes_div}>
+            <div className={midHeader}>
               <p>Home</p>
               <p>Our Services</p>
               <p>Gallery</p>

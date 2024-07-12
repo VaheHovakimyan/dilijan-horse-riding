@@ -4,14 +4,18 @@ import React from "react";
 import Image from "next/image";
 
 import style from "./Footer.module.scss";
+import mediaStyle from './FooterMedia.module.scss';
 import footer_logo from '../../assets/images/header_logo_.jpg';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 export const Footer = ({ }: {}) => {
 
   return (
-    <div className={style.footer_main}>
-      <div className={style.footer_main_flex}>
-        <div className={style.footer_logo_social_flex}>
+    <div className={`${style.footer_main} ${mediaStyle.footer_main}`}>
+      <div className={`${style.footer_main_flex} ${mediaStyle.footer_main_flex}`}>
+        <div className={`${style.footer_logo_social_flex} ${mediaStyle.footer_logo_social_flex}`}>
           <Image
             src={footer_logo}
             width={165}
@@ -19,15 +23,16 @@ export const Footer = ({ }: {}) => {
             alt="header logo"
             className={style.footer_logo}
           />
-          <div className={style.footer_social_div}>
-            <div className={style.footer_social_contacts_div}>
+          <div className={`${style.footer_social_div} ${mediaStyle.footer_social_div}`}>
+            <div className={`${style.footer_social_contacts_div} ${mediaStyle.footer_social_contacts_div}`}>
               <p className={style.footer_social_contact}>Telephone: (+374)77-97-73-34</p>
               <p className={style.footer_social_contact}>Address: Dilijan, Village of Haghartsin</p>
               <p className={style.footer_social_contact}>Email: dilijanhorseriding@gmail.com</p>
             </div>
-            <div className={style.footer_social_icons_div}>
-              <img src={footer_logo.src} alt="instagram_icon" width={50} height={50} />
-              <img src={footer_logo.src} alt="instagram_icon" width={50} height={50} />
+            <div className={`${style.footer_social_icons_div} ${mediaStyle.footer_social_icons_div}`}>
+              <FacebookIcon sx={{ fontSize: 60, color: "white" }} />
+              <InstagramIcon sx={{ fontSize: 60, color: "white" }} />
+              <TelegramIcon sx={{ fontSize: 60, color: "white" }} />
             </div>
           </div>
         </div>
