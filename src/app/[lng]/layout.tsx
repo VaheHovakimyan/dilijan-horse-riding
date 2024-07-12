@@ -4,6 +4,7 @@ import { Footer, Header } from "../_lib/common/ui";
 import { languages } from '../i18n/settings'
 
 import website_icon from "../_lib/common/ui/assets/icons/website_title_icons/website_title_icon.png";
+import AllRights from "../_lib/common/ui/shared/AllRights/AllRights";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,7 +34,7 @@ const RootLayout = ({
 }: Readonly<{
   children: React.ReactNode;
   params: {
-    lng:any
+    lng: any
   }
 }>) => {
 
@@ -42,8 +43,8 @@ const RootLayout = ({
       <body className={inter.className}>
         <Header />
         <main>{children}</main>
-
         <Footer />
+        {/* <AllRights /> */}
       </body>
     </html>
   );
