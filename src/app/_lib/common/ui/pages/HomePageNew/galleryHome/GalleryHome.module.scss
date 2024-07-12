@@ -32,15 +32,18 @@
 
 // Style
 
-.gallery_home {
-  max-width: 1440px;
-  margin: 40px auto;
-  .gallery_home_main_1 {
-    @extend %grid_Template;
-    grid-template-columns: 2fr 3fr 1fr;
-  }
-  .gallery_home_main_2 {
-    @extend %grid_Template;
-    grid-template-columns: 1fr 3fr 2fr;
+.gallery_home_main {
+  margin: 0 40px;
+  .gallery_home {
+    max-width: 1440px;
+    margin: 40px auto;
+    .gallery_home_main_1 {
+      @extend %grid_Template;
+      grid-template-columns: 2fr 3fr 1fr;
+    }
+    .gallery_home_main_2 {
+      @extend %grid_Template;
+      grid-template-columns: 1fr 3fr 2fr;
+    }
   }
 }
