@@ -1,38 +1,37 @@
 'use client'
 
 import style from "./OurServicesHome.module.scss";
-import mainBack from '../../../assets/images/home_main_background.jpg'
-
+import servicesImage from "../../../assets/images/home_main_background.jpg";
 
 const ourServices = [
   {
     id: Math.random(),
-    image: mainBack.src,
+    image: servicesImage.src,
     title: "Horse Riding",
   },
   {
     id: Math.random(),
-    image: mainBack.src,
+    image: servicesImage.src,
     title: "Jeeping",
   },
   {
     id: Math.random(),
-    image: mainBack.src,
+    image: servicesImage.src,
     title: "Teambuilding",
   },
   {
     id: Math.random(),
-    image: mainBack.src,
+    image: servicesImage.src,
     title: "Photoshoot",
   },
   {
     id: Math.random(),
-    image: mainBack.src,
+    image: servicesImage.src,
     title: "Camping",
   },
   {
     id: Math.random(),
-    image: mainBack.src,
+    image: servicesImage.src,
     title: "Quadro tours",
   },
 ];

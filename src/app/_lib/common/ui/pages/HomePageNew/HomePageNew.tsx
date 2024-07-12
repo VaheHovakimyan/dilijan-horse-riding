@@ -1,23 +1,25 @@
-"use client";
+'use client'
 
-import React, { FC } from "react";
+
+import React from "react";
 import style from "./HomePageNew.module.scss";
-import "../../scss/index.scss";
-import WelcomeComponent from "./welcomeComponent/WelcomeComponent";
+import '../../scss/index.scss';
+import WelcomeComponent from './welcomeComponent/WelcomeComponent';
 import OurServicesHome from "./ourServices/OurServicesHome";
 import SloganHome from "./sloganHome/SloganHome";
 import OurHorsesHome from "./ourHorses/OurHorsesHome";
 import GalleryHome from "./galleryHome/GalleryHome";
 
-interface IHomePageNew {
-  data?:any
-}
+export const HomePageNew = ({
 
-export const HomePageNew:FC<IHomePageNew> = ({data}) => {
+}: {
 
+
+  }) => {
 
   return (
     <>
+
       <WelcomeComponent />
 
       <OurServicesHome />
@@ -27,6 +29,7 @@ export const HomePageNew:FC<IHomePageNew> = ({data}) => {
       <OurHorsesHome />
 
       <GalleryHome />
+      
     </>
   );
 };
