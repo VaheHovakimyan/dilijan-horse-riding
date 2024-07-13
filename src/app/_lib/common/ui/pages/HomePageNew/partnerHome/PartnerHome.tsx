@@ -9,12 +9,30 @@ import 'swiper/css';
 
 export const PartnerHome = ({ }: {}) => {
 
+  const sliderParams = {
+    slidesPerView: 5,
+    spaceBetween: 40,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 20
+      },
+      560: {
+        slidesPerView: 3,
+        spaceBetween: 30
+      },
+      990: {
+        slidesPerView: 4,
+        spaceBetween: 40
+      }
+    }
+  }
+
   return (
     <div className={style.partner_home_main_flex}>
       <div className={style.partner_home_main}>
         <Swiper
-          spaceBetween={40}
-          slidesPerView={4}
+          {...sliderParams}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
