@@ -231,9 +231,9 @@ export const OurHorsesHome = ({ }: {}) => {
         <div className={style.our_horses_home_main_flex}>
           <h2 className={style.our_horses_home_main_title}>Our horses</h2>
           <div className={style.our_horses_home_div_flex}>
-            {ourHorses.map((horse) => {
+            {ourHorses.map((horse, index: number) => {
               return (
-                <div className={style.our_horses_home_div_item}>
+                <div className={style.our_horses_home_div_item} key={index}>
                   <div className={style.circle_div}>
                     <div className={style.circle_div_name}>
                       <span className={style.circle_div_name_span}>{horse.title}</span>

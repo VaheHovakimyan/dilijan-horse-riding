@@ -9,6 +9,7 @@ import OurServicesHome from "./ourServices/OurServicesHome";
 import SloganHome from "./sloganHome/SloganHome";
 import OurHorsesHome from "./ourHorses/OurHorsesHome";
 import GalleryHome from "./galleryHome/GalleryHome";
+import { PartnerHome } from "./partnerHome/PartnerHome";
 
 export const HomePageNew = ({
 
@@ -29,6 +30,8 @@ export const HomePageNew = ({
       <OurHorsesHome />
 
       <GalleryHome />
+
+      <PartnerHome />
       
     </>
   );
