@@ -4,6 +4,7 @@
 import React from "react";
 import style from "./PartnerHome.module.scss";
 import { Swiper, SwiperSlide } from 'swiper/react';
+import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
 
@@ -32,7 +33,13 @@ export const PartnerHome = ({ }: {}) => {
     <div className={style.partner_home_main_flex}>
       <div className={style.partner_home_main}>
         <Swiper
+        modules={[Autoplay, Pagination]}
           {...sliderParams}
+          autoplay={{
+            delay: 1000,
+            pauseOnMouseEnter: true,
+            disableOnInteraction: false
+           }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >
