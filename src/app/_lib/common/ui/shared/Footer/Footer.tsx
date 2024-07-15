@@ -5,6 +5,7 @@ import Image from "next/image";
 
 import style from "./Footer.module.scss";
 import mediaStyle from './FooterMedia.module.scss';
+
 import footer_logo from '../../assets/images/header_logo_.jpg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
