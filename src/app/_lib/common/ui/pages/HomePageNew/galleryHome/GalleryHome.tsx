@@ -2,6 +2,7 @@
 
 import React from "react";
 import style from "./GalleryHome.module.scss";
+import mediaStyle from './GalleryHomeMedia.module.scss';
 import horse_image from '../../../assets/images/horse_image.jpg';
 
 
