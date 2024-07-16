@@ -1,0 +1,34 @@
+// Imports
+
+@import "../../../scss/variables/variables.scss";
+@import "../../../scss/variables/mixins.scss";
+
+// Style
+
+@include Bg_mobile {
+  .our_horses_home_main {
+    .our_horses_home_main_pad {
+      padding: 0;
+      .our_horses_home_main_flex {
+        .our_horses_home_main_title {
+          padding-top: 24px;
+          font-size: 32px;
+        }
+        .our_horses_home_div_flex {
+          .our_horses_home_div_item {
+            .circle_div {
+              width: 250px;
+              height: 250px;
+              .circle_div_name {
+                height: 30%;
+                .circle_div_name_span {
+                  font-size: 24px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
