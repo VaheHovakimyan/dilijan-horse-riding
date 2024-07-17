@@ -3,6 +3,7 @@
 
 import React from "react";
 import style from "./PartnerHome.module.scss";
+import mediaStyle from './PartnerHomeMedia.module.scss';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
@@ -30,8 +31,8 @@ export const PartnerHome = ({ }: {}) => {
   }
 
   return (
-    <div className={style.partner_home_main_flex}>
-      <div className={style.partner_home_main}>
+    <div className={`${style.partner_home_main_flex} ${mediaStyle.partner_home_main_flex}`}>
+      <div className={`${style.partner_home_main} ${mediaStyle.partner_home_main}`}>
         <Swiper
         modules={[Autoplay, Pagination]}
           {...sliderParams}

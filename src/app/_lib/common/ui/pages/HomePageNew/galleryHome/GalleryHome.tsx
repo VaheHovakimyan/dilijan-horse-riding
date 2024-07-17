@@ -5,37 +5,34 @@ import style from "./GalleryHome.module.scss";
 import mediaStyle from './GalleryHomeMedia.module.scss';
 import horse_image from '../../../assets/images/horse_image.jpg';
 
+const arr: number[] = [0, 1, 2];
 
 export const GalleryHome = ({ }: {}) => {
 
   return (
-    <div className={style.gallery_home_main}>
-      <div className={style.gallery_home}>
+    <div className={`${style.gallery_home_main} ${mediaStyle.gallery_home_main}`}>
+      <div className={`${style.gallery_home} ${mediaStyle.gallery_home}`}>
 
-        <div className={style.gallery_home_main_1}>
-          <div className={style.gallery_home_main_item}>
-            <div className={style.gallery_home_main_item_opacity}></div>
-          </div>
-          <div className={style.gallery_home_main_item}>
-            <div className={style.gallery_home_main_item_opacity}></div>
-          </div>
-          <div className={style.gallery_home_main_item}>
-            <div className={style.gallery_home_main_item_opacity}></div>
-          </div>
+        <div className={`${style.gallery_home_main_1} ${mediaStyle.gallery_home_main_1}`}>
+          {arr.map((item: number) => {
+            return (
+              <div className={`${style.gallery_home_main_item} ${mediaStyle.gallery_home_main_item}`} key={item}>
+                <div className={style.gallery_home_main_item_opacity}></div>
+              </div>
+            )
+          })}
         </div>
 
-        <div className={style.gallery_home_main_2}>
-          <div className={style.gallery_home_main_item}>
-            <div className={style.gallery_home_main_item_opacity}></div>
-          </div>
-          <div className={style.gallery_home_main_item}>
-            <div className={style.gallery_home_main_item_opacity}></div>
-          </div>
-          <div className={style.gallery_home_main_item}>
-            <div className={style.gallery_home_main_item_opacity}>
-              <p className={style.gallery_home_main_item_opacity_last}>+ 343</p>
-            </div>
-          </div>
+        <div className={`${style.gallery_home_main_2} ${mediaStyle.gallery_home_main_2}`}>
+          {arr.map((item: number) => {
+            return (
+              <div className={`${style.gallery_home_main_item} ${mediaStyle.gallery_home_main_item}`} key={item}>
+                <div className={`${style.gallery_home_main_item_opacity} ${mediaStyle.gallery_home_main_item_opacity}`}>
+                  {item === arr.length - 1 && <p className={`${style.gallery_home_main_item_opacity_last} ${mediaStyle.gallery_home_main_item_opacity_last}`}>+ 343</p>}
+                </div>
+              </div>
+            )
+          })}
         </div>
       </div>
     </div>
