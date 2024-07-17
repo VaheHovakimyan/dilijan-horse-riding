@@ -26,20 +26,20 @@ export const Footer = ({ }: {}) => {
           />
           <div className={`${style.footer_social_div} ${mediaStyle.footer_social_div}`}>
             <div className={`${style.footer_social_contacts_div} ${mediaStyle.footer_social_contacts_div}`}>
-              <p className={style.footer_social_contact}>Telephone: (+374)77-97-73-34</p>
-              <p className={style.footer_social_contact}>Address: Dilijan, Village of Haghartsin</p>
-              <p className={style.footer_social_contact}>Email: dilijanhorseriding@gmail.com</p>
+              <p className={`${style.footer_social_contact} ${mediaStyle.footer_social_contact}`}>Telephone: (+374)77-97-73-34</p>
+              <p className={`${style.footer_social_contact} ${mediaStyle.footer_social_contact}`}>Address: Dilijan, Village of Haghartsin</p>
+              <p className={`${style.footer_social_contact} ${mediaStyle.footer_social_contact}`}>Email: dilijanhorseriding@gmail.com</p>
             </div>
             <div className={`${style.footer_social_icons_div} ${mediaStyle.footer_social_icons_div}`}>
-              <FacebookIcon sx={{ fontSize: 60, color: "white" }} />
-              <InstagramIcon sx={{ fontSize: 60, color: "white" }} />
-              <TelegramIcon sx={{ fontSize: 60, color: "white" }} />
+              <FacebookIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
+              <InstagramIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
+              <TelegramIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
             </div>
           </div>
         </div>
-        <div className={style.footer_mid_div_flex}>
-          <h3 className={style.footer_mid_div_title}>Come feel the breath of the mountains</h3>
-          <p className={style.footer_mid_div_text}>
+        <div className={`${style.footer_mid_div_flex} ${mediaStyle.footer_mid_div_flex}`}>
+          <h3 className={`${style.footer_mid_div_title} ${mediaStyle.footer_mid_div_title}`}>Come feel the breath of the mountains</h3>
+          <p className={`${style.footer_mid_div_text} ${mediaStyle.footer_mid_div_text}`}>
             Dilijan Horseriding-ը նախ և առաջ պրոեկտ է,
             որով ապրում ու զարգանում է գյուղը, ի
             շնորհիվ մեր նախաձեռնության շատ տուրիզմի
@@ -53,9 +53,9 @@ export const Footer = ({ }: {}) => {
             ու իրենց հետ տանում են՝ ՍԱՐԵՐ ՁՈՐԵՐ ՈՒ ԼԻ՜ ՔԸ ՍԵՐ
           </p>
         </div>
-        <div className={style.footer_map_div}>
-          <p className={style.footer_map_title}>We are on the map</p>
-          <div className={style.footer_map}>
+        <div className={`${style.footer_map_div} ${mediaStyle.footer_map_div}`}>
+          <p className={`${style.footer_map_title} ${mediaStyle.footer_map_title}`}>We are on the map</p>
+          <div className={`${style.footer_map} ${mediaStyle.footer_map}`}>
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3021.415777499316!2d44.97570177550167!3d40.77487263376502!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x404055567b9935e5%3A0x17606dbcb9a0e871!2sDilijan%20Horse%20riding!5e0!3m2!1sru!2sam!4v1720170929648!5m2!1sru!2sam" width={'100%'} height={'100%'} style={{ border: 0 }} loading="lazy"></iframe>
           </div>
         </div>

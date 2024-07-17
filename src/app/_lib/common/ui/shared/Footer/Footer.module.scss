@@ -27,7 +27,7 @@
         flex-direction: column;
         gap: 32px;
         .footer_social_contacts_div {
-          display: none;
+          display: flex;
           flex-direction: column;
           gap: 8px;
           .footer_social_contact {
@@ -40,6 +40,10 @@
         .footer_social_icons_div {
           display: flex;
           gap: 8px;
+          .footer_social_icon {
+            font-size: 60px;
+            color: white;
+          }
         }
       }
     }
@@ -55,7 +59,7 @@
         color: white;
         font-weight: 600;
       }
-      .footer_mid_div_text{
+      .footer_mid_div_text {
         text-align: center;
         font-size: 18px;
         font-family: Verdana, Geneva, Tahoma, sans-serif;
