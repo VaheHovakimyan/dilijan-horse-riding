@@ -2,12 +2,19 @@
 
 import React from "react";
 import Image from "next/image";
-import header_logo from '../../assets/images/header_logo.png';
-import facebook_icon from '../../assets/icons/social/facebook_icon.svg';
-import instagram_icon from '../../assets/icons/social/instagram_icon.svg';
-import en_icon from '../../assets/icons/flags/en_icon.svg';
+
+import { Dropdown } from 'semantic-ui-react'
+
+
+
 import style from "./Header.module.scss";
 import mediaStyle from './HeaderMedia.module.scss';
+
+import header_logo from '../../assets/images/header_logo.png';
+import en_icon from '../../assets/icons/flags/en_icon.svg';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 
 export const Header = ({
@@ -26,12 +33,19 @@ export const Header = ({
     { name: "Korean", code: "ko", label: "KOR" },
   ];
 
-  const faFacebookF = "facebook-f";
+  const DropdownExampleSearchSelection = () => (
+    <Dropdown
+      placeholder='Select Country'
+      fluid
+      search
+      selection
+      options={langList}
+    />
+  )
+  
 
   const midHeader = `${style.routes_div} ${mediaStyle.routes_div}`;
 
-  console.log();
-  
 
   return (
     <div className={`${style.header} ${mediaStyle.header}`}>
@@ -48,21 +62,20 @@ export const Header = ({
               <p>Home</p>
               <p>Our Services</p>
               <p>Gallery</p>
-              <p>Our Horses</p>
+              <p>Our Horses</p> 
               <p>About us</p>
-            </div>
+            </div> 
             <div className={style.header_contact_lang}>
+              <DropdownExampleSearchSelection />
+              <select name="lang" id="lang" className={style.header_lang}>
+                <option value="am">am</option>
+                <option value="ru">ru</option>
+                <option value="en">en</option>
+              </select>
               <div className={style.header_contact}>
-                <img src={instagram_icon.src} alt="" width={22} height={20} />
-                <img src={facebook_icon.src} alt="" width={18} height={18} />
-              </div>
-              <div>
-                <select name="lang" id="lang">
-                  <option value="am">am</option>
-                  <option value="ru">ru</option>
-                  <option value="en">en</option>
-                </select>
-                <img src={en_icon.src} alt="en" width={10} height={10} />
+                <FacebookIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
+                <InstagramIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
+                <TelegramIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
               </div>
             </div>
           </div>
