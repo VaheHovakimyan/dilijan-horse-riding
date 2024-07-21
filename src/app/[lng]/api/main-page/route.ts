@@ -2,10 +2,9 @@ import { BASE_API_URL, AUTH_TOKEN } from "../../../constants";
 
 export async function GET(request: Request, { params }: any) {
   const { lng } = params;
-  let locale = lng;
-  if (lng === "an") locale = "hy";
 
-  const url = `${BASE_API_URL}/home-page?locale=${locale}&populate=*`;;
+
+  const url = `${BASE_API_URL}/home-page?locale=${lng}&populate=*`;;
   
   const options = {
     method: "GET",
@@ -16,6 +15,6 @@ export async function GET(request: Request, { params }: any) {
   };
 
   const res = await (await fetch(url, options)).json();
-
+  
   return Response.json(res, { status: 200 });
 }

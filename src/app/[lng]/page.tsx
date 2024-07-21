@@ -21,14 +21,13 @@ const fetchHomePageData = async (locale: string) => {
 export default async function Home({ params }: any) {
   const { lng } = params;
 
-  //TODO:open when backend on your local PC will ready
-  // const data = await fetchHomePageData(lng);
+  const data = await fetchHomePageData(lng);
 
   return (
     <>
-      {/* TODO:open when backend on your local PC will ready */}
-      {/* <HomePageNew data={data} /> */}
-      <HomePageNew  />
+    
+      <HomePageNew data={data} />
+   
     </>
   );
 }

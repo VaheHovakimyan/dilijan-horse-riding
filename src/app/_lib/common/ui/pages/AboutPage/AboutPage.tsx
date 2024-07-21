@@ -1,9 +1,16 @@
 'use client'
 
-import React from "react";
+import React, { FC } from "react";
 import style from "./AboutPage.module.scss";
 
-export const AboutPage = () => {
+interface IAboutPage {
+  data:any
+}
+
+const AboutPage:FC<IAboutPage> = ({data}) => {
+
+  console.log(data);
+  
 
   return (
     <>

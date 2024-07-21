@@ -5,10 +5,8 @@ import {BASE_API_URL,AUTH_TOKEN} from '../../../../constants'
 export async function GET(request: Request, { params }: any) {
 
   const { lng } = params;
-  let locale = lng;
-  if (lng === "an") locale = "hy";
 
-  const url = `${BASE_API_URL}/about-page?locale=${locale}&populate=*`;
+  const url = `${BASE_API_URL}/about-page?locale=${lng}&populate=*`;
 
 const options = {
 
