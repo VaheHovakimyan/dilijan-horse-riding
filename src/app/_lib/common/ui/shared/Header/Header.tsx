@@ -16,6 +16,7 @@ import en_icon from '../../assets/icons/flags/en_icon.svg';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
+import Link from "next/link";
 
 
 const langList = [
@@ -76,18 +77,30 @@ export const Header = ({ }: {}) => {
               />
               <CloseIcon onClick={() => setBurgerBool(!burgerBool)} />
             </div>
-            <div className={`${style.header_sidebar_routes_div} ${mediaStyle.header_sidebar_routes_div}`}>
-              <p>Home</p>
-              <p>Our Services</p>
-              <p>Gallery</p>
-              <p>Our Horses</p>
-              <p>About us</p>
-            </div>
+            <nav>
+              <div className={`${style.header_sidebar_routes_div} ${mediaStyle.header_sidebar_routes_div}`}>
+                <Link href={"/"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
+                  <span className={style.header_nav_link_text}>Home</span>
+                </Link>
+                <Link href={"/services"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
+                  <span className={style.header_nav_link_text}>Our Services</span>
+                </Link>
+                <Link href={"/gallery"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
+                  <span className={style.header_nav_link_text}>Gallery</span>
+                </Link>
+                <Link href={"/horses"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
+                  <span className={style.header_nav_link_text}>Our Horses</span>
+                </Link>
+                <Link href={"/about"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
+                  <span className={style.header_nav_link_text}>About us</span>
+                </Link>
+              </div>
+            </nav>
           </div>
 
           <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
             <div className={style.header_contact}>
-              <FacebookIcon className={style.header_social_icon}/>
+              <FacebookIcon className={style.header_social_icon} />
               <InstagramIcon className={style.header_social_icon} />
               <TelegramIcon className={style.header_social_icon} />
             </div>
@@ -103,13 +116,15 @@ export const Header = ({ }: {}) => {
               height={90}
               alt="header logo"
             />
-            <div className={`${style.routes_div} ${mediaStyle.routes_div}`}>
-              <p>Home</p>
-              <p>Our Services</p>
-              <p>Gallery</p>
-              <p>Our Horses</p>
-              <p>About us</p>
-            </div>
+            <nav>
+              <div className={`${style.routes_div} ${mediaStyle.routes_div}`}>
+                <Link href={"/"} className={style.header_nav_link}><p>Home</p></Link>
+                <Link href={"/services"} className={style.header_nav_link}><p>Our Services</p></Link>
+                <Link href={"/gallery"} className={style.header_nav_link}><p>Gallery</p></Link>
+                <Link href={"/horses"} className={style.header_nav_link}><p>Our Horses</p></Link>
+                <Link href={"/about"} className={style.header_nav_link}><p>About us</p></Link>
+              </div>
+            </nav>
             <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
               <select name="lang" id="lang" className={`${style.header_lang} ${mediaStyle.header_lang}`}>
                 <option value="am" className={style.header_lang_option}>🇦🇲&emsp;AM</option>
@@ -124,11 +139,7 @@ export const Header = ({ }: {}) => {
             </div>
             <MenuIcon
               className={`${style.header_burger_icon} ${mediaStyle.header_burger_icon}`}
-              onClick={() => {
-                console.log("hello", burgerBool);
-
-                setBurgerBool(!burgerBool)
-              }}
+              onClick={() => setBurgerBool(!burgerBool)}
             />
           </div>
         </div>

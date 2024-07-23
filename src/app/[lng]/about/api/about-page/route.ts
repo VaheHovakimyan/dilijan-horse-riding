@@ -8,6 +8,11 @@ import {BASE_API_URL,AUTH_TOKEN} from '../../../../constants'
 
 //   const url = `${BASE_API_URL}/about-page?locale=${lng}&populate=*`;
 
+//   const { lng } = params;
+
+//   const url = `${BASE_API_URL}/about-page?locale=${lng}&populate=*`;
+
+
 // const options = {
 
 //     method: "GET",

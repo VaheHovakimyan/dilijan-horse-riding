@@ -1,18 +1,22 @@
 'use client'
 
-import React from "react";
+import React, { FC } from "react";
 import style from "./AboutPage.module.scss";
+import PageTitleComponent from "../../shared/PageTitleComponent/PageTitleComponent";
 
-export const AboutPage = () => {
+interface IAboutPage {
+  data: any
+}
+
+const AboutPage: FC<IAboutPage> = ({ data }) => {
+
+  console.log(data);
+
 
   return (
-    <>
-
-      <div className={style.wrapper}>
-
-        about page
-      </div>
-    </>
+    <div className={style.wrapper}>
+      <PageTitleComponent title={"About us"} />
+    </div>
   );
 };
 

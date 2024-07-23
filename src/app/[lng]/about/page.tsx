@@ -1,6 +1,6 @@
 
+import AboutPage from "@/app/_lib/common/ui/pages/AboutPage/AboutPage";
 import Head from "next/head";
-import { AboutPage } from "../../_lib/common/ui";
 
 
 // const fetchAboutPageData = async (locale: string) => {
