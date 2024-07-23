@@ -8,26 +8,26 @@ const HomePageNew = dynamic(
   () => import("../_lib/common/ui/pages/HomePageNew/HomePageNew")
 );
 
-const fetchHomePageData = async (locale: string) => {
-  const apiBaseUrl = "http://127.0.0.1:3000";
-  const url = `${apiBaseUrl}/${locale}/api/main-page`;
+// const fetchHomePageData = async (locale: string) => {
+//   const apiBaseUrl = "http://127.0.0.1:3000";
+//   const url = `${apiBaseUrl}/${locale}/api/main-page`;
 
 
-  const res = await fetch(url);
-  const data = await res.json();
-  return data;
-};
+//   const res = await fetch(url);
+//   const data = await res.json();
+//   return data;
+// };
 
 export default async function Home({ params }: any) {
   const { lng } = params;
 
-  const data = await fetchHomePageData(lng);
+  // const data = await fetchHomePageData(lng);
+
+  const data = {};
 
   return (
     <>
-    
       <HomePageNew data={data} />
-   
     </>
   );
 }
