@@ -20,8 +20,8 @@ export const metadata: Metadata = {
   description: "Dilijan Horse Riding",
   icons: website_icon.src,
   openGraph: {
-    title: "SEO TITLE EXAMPLE",
-    description: "SEO DESC EXAMPLE",
+    title: "Dilijan Horse Riding, official website",
+    description: "Dilijan Horse Riding, jeeping, team building, etc.",
     // images:'path/to/image'
   },
 };

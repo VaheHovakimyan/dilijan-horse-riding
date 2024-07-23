@@ -17,7 +17,7 @@ interface IHomePageNew {
 
 const HomePageNew:FC<IHomePageNew> = ({data}) => {
 
-  console.log(data,'aaaaa');
+  // console.log(data,'aaaaa');
   
   return (
     <>

@@ -34,19 +34,19 @@
     .header_sidebar_logo_routes {
       display: flex;
       flex-direction: column;
-      gap:72px;
+      gap: 72px;
       .header_sidebar_logo_close {
         display: flex;
         justify-content: space-between;
         align-self: stretch;
       }
     }
-    .header_contact_lang{
-      .header_contact{
+    .header_contact_lang {
+      .header_contact {
         display: flex;
         justify-content: center;
         gap: 4px;
-        .header_social_icon{
+        .header_social_icon {
           font-size: 48px;
           color: rgb(10, 10, 10);
         }
@@ -59,6 +59,13 @@
       font-size: 20px;
       line-height: 120%;
       align-items: center;
+      .header_nav_link {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
+        .header_nav_link_text{
+          color: rgb(10, 10, 10);
+        }
+      }
     }
   }
 }
@@ -76,6 +83,13 @@
       gap: 16px;
       justify-content: center;
       align-items: center;
+      .header_nav_link {
+        text-decoration: none;
+        color: rgb(10, 10, 10);
+        .header_nav_link_text{
+          color: rgb(10, 10, 10);
+        }
+      }
     }
     .header_contact_lang {
       display: flex;
