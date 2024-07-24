@@ -1,4 +1,6 @@
 import React from "react";
+import style from './PageTitleComponent.module.scss';
+
 
 export default function PageTitleComponent({ title }: { title: string }) {
 
@@ -6,8 +8,10 @@ export default function PageTitleComponent({ title }: { title: string }) {
 
 
   return (
-    <div>
-      <h1>{title}</h1>
+    <div className={style.page_title_div_flex}>
+      <div className={style.page_title_div_flex_opacity}>
+        <h1 className={style.page_title}>{title}</h1>
+      </div>
     </div>
   );
 }

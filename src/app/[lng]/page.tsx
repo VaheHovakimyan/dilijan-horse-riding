@@ -7,7 +7,7 @@ import Head from "next/head";
 const HomePageNew = dynamic(
   () => import("../_lib/common/ui/pages/HomePageNew/HomePageNew")
 );
-
+   
 // const fetchHomePageData = async (locale: string) => {
 //   const apiBaseUrl = "http://127.0.0.1:3000";
 //   const url = `${apiBaseUrl}/${locale}/api/main-page`;

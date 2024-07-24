@@ -110,12 +110,14 @@ export const Header = ({ }: {}) => {
 
         <div className={`${style.header_flex} ${mediaStyle.header_flex}`}>
           <div className={`${style.header_content} ${mediaStyle.header_content}`}>
-            <Image
-              src={header_logo}
-              width={205}
-              height={90}
-              alt="header logo"
-            />
+            <Link href={"/"} className={style.header_nav_link}>
+              <Image
+                src={header_logo}
+                width={205}
+                height={90}
+                alt="header logo"
+              />
+            </Link>
             <nav>
               <div className={`${style.routes_div} ${mediaStyle.routes_div}`}>
                 <Link href={"/"} className={style.header_nav_link}><p>Home</p></Link>
