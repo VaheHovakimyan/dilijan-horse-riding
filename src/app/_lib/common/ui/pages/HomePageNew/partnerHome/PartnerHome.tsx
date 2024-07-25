@@ -8,39 +8,38 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Pagination, Autoplay } from 'swiper/modules';
 import 'swiper/css';
 
-
-export const PartnerHome = ({ }: {}) => {
-
-  const sliderParams = {
-    slidesPerView: 5,
-    spaceBetween: 40,
-    breakpoints: {
-      320: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      560: {
-        slidesPerView: 3,
-        spaceBetween: 30
-      },
-      990: {
-        slidesPerView: 4,
-        spaceBetween: 40
-      }
+const sliderParams = {
+  slidesPerView: 5,
+  spaceBetween: 40,
+  breakpoints: {
+    320: {
+      slidesPerView: 2,
+      spaceBetween: 20
+    },
+    560: {
+      slidesPerView: 3,
+      spaceBetween: 30
+    },
+    990: {
+      slidesPerView: 4,
+      spaceBetween: 40
     }
   }
+}
+
+export const PartnerHome = ({ }: {}) => {
 
   return (
     <div className={`${style.partner_home_main_flex} ${mediaStyle.partner_home_main_flex}`}>
       <div className={`${style.partner_home_main} ${mediaStyle.partner_home_main}`}>
         <Swiper
-        modules={[Autoplay, Pagination]}
+          modules={[Autoplay, Pagination]}
           {...sliderParams}
           autoplay={{
             delay: 1000,
             pauseOnMouseEnter: true,
             disableOnInteraction: false
-           }}
+          }}
           onSlideChange={() => console.log('slide change')}
           onSwiper={(swiper) => console.log(swiper)}
         >

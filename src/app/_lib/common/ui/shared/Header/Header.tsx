@@ -88,9 +88,6 @@ export const Header = ({ }: {}) => {
                 <Link href={"/gallery"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
                   <span className={style.header_nav_link_text}>Gallery</span>
                 </Link>
-                <Link href={"/horses"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
-                  <span className={style.header_nav_link_text}>Our Horses</span>
-                </Link>
                 <Link href={"/about"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
                   <span className={style.header_nav_link_text}>About us</span>
                 </Link>
@@ -123,7 +120,6 @@ export const Header = ({ }: {}) => {
                 <Link href={"/"} className={style.header_nav_link}><p>Home</p></Link>
                 <Link href={"/services"} className={style.header_nav_link}><p>Our Services</p></Link>
                 <Link href={"/gallery"} className={style.header_nav_link}><p>Gallery</p></Link>
-                <Link href={"/horses"} className={style.header_nav_link}><p>Our Horses</p></Link>
                 <Link href={"/about"} className={style.header_nav_link}><p>About us</p></Link>
               </div>
             </nav>

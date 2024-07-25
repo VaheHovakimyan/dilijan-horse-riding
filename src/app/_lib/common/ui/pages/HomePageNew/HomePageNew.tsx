@@ -1,7 +1,6 @@
 "use client";
 
 import React, { FC } from "react";
-import style from "./HomePageNew.module.scss";
 import "../../scss/index.scss";
 import WelcomeComponent from "./welcomeComponent/WelcomeComponent";
 import OurServicesHome from "./ourServices/OurServicesHome";
@@ -16,8 +15,6 @@ interface IHomePageNew {
 }
 
 const HomePageNew:FC<IHomePageNew> = ({data}) => {
-
-  // console.log(data,'aaaaa');
   
   return (
     <>
