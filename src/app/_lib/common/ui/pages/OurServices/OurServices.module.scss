@@ -1,0 +1,28 @@
+.our_services {
+  margin-bottom: 40px;
+  .our_services_slider {
+    position: relative;
+    margin: 32px 16px;
+    .swiper_item_image {
+      width: 100%;
+      height: auto;
+      object-fit: cover;
+      object-position: center;
+      background-size: cover;
+      background-position: center;
+    }
+    .our_services_slider_btns{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 0%;
+      z-index: 100;
+      .swiper_navigation_button{
+        font-size: 50px;
+      }
+    }
+  }
+}
