@@ -1,0 +1,30 @@
+// Imports
+
+@import "../../scss/variables/variables.scss";
+@import "../../scss/variables/mixins.scss";
+
+// Style
+
+@include Laptop {
+  .our_services {
+    .our_services_slider {
+      .our_services_slider_btns {
+        .swiper_navigation_button {
+          width: 32px;
+        }
+      }
+    }
+  }
+}
+
+@include Bg_mobile {
+  .our_services {
+    .our_services_slider {
+      .our_services_slider_btns {
+        .swiper_navigation_button {
+          width: 24px;
+        }
+      }
+    }
+  }
+}
