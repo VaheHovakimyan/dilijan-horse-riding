@@ -3,9 +3,12 @@
 import React from "react";
 import PageTitleComponent from "../../shared/PageTitleComponent/PageTitleComponent";
 import style from './OurServices.module.scss';
+import mediaStyle from './OurServicesMedia.module.scss';
 import { Swiper, SwiperSlide, useSwiper } from 'swiper/react';
 import { Pagination, Autoplay, Navigation } from 'swiper/modules';
 import horse_image from '../../assets/images/horse_image.jpg';
+import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+
 
 const sliderParams = {
   slidesPerView: 5,
@@ -31,9 +34,9 @@ export const OurServicesPage = ({ }: {}) => {
   const swiper = useSwiper();
 
   return (
-    <section className={style.our_services}>
+    <section className={`${style.our_services} ${mediaStyle.our_services}`}>
       <PageTitleComponent title={"Our Services"} />
-      <div className={style.our_services_slider}>
+      <div className={`${style.our_services_slider} ${mediaStyle.our_services_slider}`}>
         <Swiper
           navigation={{
             nextEl: '#swiper-button-next',
@@ -58,9 +61,13 @@ export const OurServicesPage = ({ }: {}) => {
           <SwiperSlide><img src={horse_image.src} alt="image1" className={style.swiper_item_image} /></SwiperSlide>
           <SwiperSlide><img src={horse_image.src} alt="image1" className={style.swiper_item_image} /></SwiperSlide>
           <SwiperSlide><img src={horse_image.src} alt="image1" className={style.swiper_item_image} /></SwiperSlide>
-          <div className={style.our_services_slider_btns}>
-            <div id="swiper-button-prev" className={style.swiper_navigation_button}>previous</div>
-            <div id="swiper-button-next" className={style.swiper_navigation_button}>next</div>
+          <div className={`${style.our_services_slider_btns} ${mediaStyle.our_services_slider_btns}`}>
+            <div id="swiper-button-prev" className={`${style.swiper_navigation_button} ${mediaStyle.swiper_navigation_button}`}>
+            <ArrowForwardIosIcon style={{transform: 'rotate(180deg)', color: "white"}} />
+            </div>
+            <div id="swiper-button-next" className={`${style.swiper_navigation_button} ${mediaStyle.swiper_navigation_button}`}>
+             <ArrowForwardIosIcon style={{color: "white"}}/>
+            </div>
           </div>
         </Swiper>
       </div>
