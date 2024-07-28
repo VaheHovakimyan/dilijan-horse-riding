@@ -40,9 +40,13 @@
         .footer_social_icons_div {
           display: flex;
           gap: 8px;
-          .footer_social_icon {
-            font-size: 60px;
-            color: white;
+          .footer_social_icon_link {
+            width: 60px;
+            height: 60px;
+            .footer_social_icon {
+              font-size: 60px;
+              color: white;
+            }
           }
         }
       }

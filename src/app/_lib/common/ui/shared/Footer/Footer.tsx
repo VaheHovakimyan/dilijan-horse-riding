@@ -31,13 +31,15 @@ export const Footer = ({ }: {}) => {
               <p className={`${style.footer_social_contact} ${mediaStyle.footer_social_contact}`}>Email: dilijanhorseriding@gmail.com</p>
             </div>
             <div className={`${style.footer_social_icons_div} ${mediaStyle.footer_social_icons_div}`}>
-              <a href="https://www.facebook.com/dilijanhorseriding/" target="_blank">
+              <a href="https://www.facebook.com/dilijanhorseriding/" target="_blank" className={style.footer_social_icon_link}>
                 <FacebookIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
               </a>
-              <a href="https://www.instagram.com/dilijan_horseriding/" target="_blank">
+              <a href="https://www.instagram.com/dilijan_horseriding/" target="_blank" className={style.footer_social_icon_link}>
                 <InstagramIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
               </a>
-              <TelegramIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
+              <a href="#" target="_blank" className={style.footer_social_icon_link}>
+                <TelegramIcon className={`${style.footer_social_icon} ${mediaStyle.footer_social_icon}`} />
+              </a>
             </div>
           </div>
         </div>

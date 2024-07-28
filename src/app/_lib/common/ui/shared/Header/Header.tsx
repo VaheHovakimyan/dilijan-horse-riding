@@ -97,9 +97,15 @@ export const Header = ({ }: {}) => {
 
           <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
             <div className={style.header_contact}>
-              <FacebookIcon className={style.header_social_icon} />
-              <InstagramIcon className={style.header_social_icon} />
-              <TelegramIcon className={style.header_social_icon} />
+              <a href="https://www.facebook.com/dilijanhorseriding/" target="_blank" className={style.header_contact_link}>
+                <FacebookIcon className={style.header_social_icon} />
+              </a>
+              <a href="https://www.instagram.com/dilijan_horseriding/" target="_blank" className={style.header_contact_link}>
+                <InstagramIcon className={style.header_social_icon} />
+              </a>
+              <a href="#" target="_blank" className={style.header_contact_link}>
+                <TelegramIcon className={style.header_social_icon} />
+              </a>
             </div>
           </div>
         </div>
@@ -130,9 +136,15 @@ export const Header = ({ }: {}) => {
                 <option value="en" className={style.header_lang_option}>🇬🇧&emsp;EN</option>
               </select>
               <div className={`${style.header_contact} ${mediaStyle.header_contact}`}>
-                <FacebookIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
-                <InstagramIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
-                <TelegramIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
+                <a href="https://www.facebook.com/dilijanhorseriding/" target="_blank" className={style.header_social_icon_link}>
+                  <FacebookIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
+                </a>
+                <a href="https://www.instagram.com/dilijan_horseriding/" target="_blank" className={style.header_social_icon_link}>
+                  <InstagramIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
+                </a>
+                <a href="#" target="_blank" className={style.header_social_icon_link}>
+                  <TelegramIcon className={`${style.header_social_icon} ${mediaStyle.header_social_icon}`} />
+                </a>
               </div>
             </div>
             <MenuIcon
@@ -141,8 +153,8 @@ export const Header = ({ }: {}) => {
             />
           </div>
         </div>
-      </header>
-    </div>
+      </header >
+    </div >
   );
 };
 
