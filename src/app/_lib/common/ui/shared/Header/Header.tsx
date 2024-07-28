@@ -97,8 +97,12 @@ export const Header = ({ }: {}) => {
 
           <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
             <div className={style.header_contact}>
-              <FacebookIcon className={style.header_social_icon} />
-              <InstagramIcon className={style.header_social_icon} />
+              <a href="https://www.facebook.com/dilijanhorseriding/" target="_blank">
+                <FacebookIcon className={style.header_social_icon} />
+              </a>
+              <a href="https://www.instagram.com/dilijan_horseriding/" target="_blank">
+                <InstagramIcon className={style.header_social_icon} />
+              </a>
               <TelegramIcon className={style.header_social_icon} />
             </div>
           </div>
