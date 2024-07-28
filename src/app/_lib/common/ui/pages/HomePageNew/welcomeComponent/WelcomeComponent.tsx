@@ -4,6 +4,7 @@
 import React from "react";
 import style from "./WelcomeComponent.module.scss";
 import mediaStyle from './WelcomeComponentMedia.module.scss';
+import Link from "next/link";
 
 export const WelcomeComponent = ({ }: {}) => {
 
@@ -18,7 +19,9 @@ export const WelcomeComponent = ({ }: {}) => {
             inventore possimus? Enim ducimus fugit ratione eius a
             facilis totam voluptas sint esse?
           </p>
-          <button className={`${style.welcome_content_btn} ${mediaStyle.welcome_content_btn}`}>Our Services</button>
+          <Link href={"#services"}>
+            <button className={`${style.welcome_content_btn} ${mediaStyle.welcome_content_btn}`}>Our Services</button>
+          </Link>
         </div>
       </div>
     </div>

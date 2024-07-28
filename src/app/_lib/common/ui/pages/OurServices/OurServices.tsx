@@ -45,7 +45,7 @@ export const OurServicesPage = ({ }: {}) => {
           modules={[Autoplay, Pagination, Navigation]}
           {...sliderParams}
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             pauseOnMouseEnter: true,
             disableOnInteraction: false
           }}

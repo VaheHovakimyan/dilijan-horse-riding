@@ -36,7 +36,7 @@ export const PartnerHome = ({ }: {}) => {
           modules={[Autoplay, Pagination]}
           {...sliderParams}
           autoplay={{
-            delay: 1000,
+            delay: 2000,
             pauseOnMouseEnter: true,
             disableOnInteraction: false
           }}
