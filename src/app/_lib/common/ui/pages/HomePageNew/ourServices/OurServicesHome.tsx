@@ -40,7 +40,7 @@ const ourServices = [
 export const OurServicesHome = ({ }: {}) => {
 
   return (
-    <div className={`${style.our_services_home_main} ${mediaStyle.our_services_home_main}`}>
+    <div className={`${style.our_services_home_main} ${mediaStyle.our_services_home_main}`} id="services">
       <h3 className={`${style.our_services_home_title} ${mediaStyle.our_services_home_title}`}>Our Services</h3>
       <div className={`${style.our_services_home_flex} ${mediaStyle.our_services_home_flex}`}>
         {ourServices.map((item) => {
