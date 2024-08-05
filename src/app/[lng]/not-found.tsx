@@ -27,8 +27,6 @@ export function NotFound ({
                         <div>
                             <Link  style={{display: "inline-flex"}} href='/'>
                                 Home
-                               
-                               
                             </Link>
                         </div>
                     </div>

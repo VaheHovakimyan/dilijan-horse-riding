@@ -23,6 +23,8 @@ export default async function Home({ params }: any) {
 
   // const data = await fetchHomePageData(lng);
 
+  // console.log(data);
+  
   const data = {};
 
   return (

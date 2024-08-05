@@ -3,12 +3,14 @@
 import React from "react";
 import style from "./GalleryHome.module.scss";
 import mediaStyle from './GalleryHomeMedia.module.scss';
+import Link from "next/link";
 
 const arr: number[] = [0, 1, 2];
 
 export const GalleryHome = ({ }: {}) => {
 
   return (
+    <Link href={"/gallery"}>
     <div className={`${style.gallery_home_main} ${mediaStyle.gallery_home_main}`}>
       <div className={`${style.gallery_home} ${mediaStyle.gallery_home}`}>
 
@@ -35,6 +37,7 @@ export const GalleryHome = ({ }: {}) => {
         </div>
       </div>
     </div>
+    </Link>
   );
 };
 

@@ -1,23 +1,23 @@
 import { BASE_API_URL, AUTH_TOKEN } from "../../../constants";
 
-// export async function GET(request: Request, { params }: any) {
-//   const { lng } = params;
+export async function GET(request: Request, { params }: any) {
+  const { lng } = params;
 
 
-//   const url = `${BASE_API_URL}/home-page?locale=${lng}&populate=*`;;
+  const url = `${BASE_API_URL}/home-page?locale=${lng}&populate=*`;
   
-//   const options = {
-//     method: "GET",
-//     headers: {
-//       "Content-type": "application/json",
-//       Authorization: `bearer ${AUTH_TOKEN}`,
-//     },
-//   };
+  const options = {
+    method: "GET",
+    headers: {
+      "Content-type": "application/json",
+      Authorization: `bearer ${AUTH_TOKEN}`,
+    },
+  };
 
-//   const res = await (await fetch(url, options)).json();
+  const res = await (await fetch(url, options)).json();
   
-//   return Response.json(res, { status: 200 });
-// }
+  return Response.json(res, { status: 200 });
+}
 
 // export async function GET(request: Request, { params }: any) {
 //   const { lng } = params;
