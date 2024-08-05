@@ -5,7 +5,6 @@ import "../../scss/index.scss";
 import WelcomeComponent from "./welcomeComponent/WelcomeComponent";
 import OurServicesHome from "./ourServices/OurServicesHome";
 import SloganHome from "./sloganHome/SloganHome";
-import OurHorsesHome from "./ourHorses/OurHorsesHome";
 import GalleryHome from "./galleryHome/GalleryHome";
 import { PartnerHome } from "./partnerHome/PartnerHome";
 
@@ -16,6 +15,8 @@ interface IHomePageNew {
 
 const HomePageNew:FC<IHomePageNew> = ({data}) => {
   
+
+  
   return (
     <>
       <WelcomeComponent />
@@ -23,8 +24,6 @@ const HomePageNew:FC<IHomePageNew> = ({data}) => {
       <OurServicesHome />
 
       <SloganHome />
-
-      <OurHorsesHome />
 
       <GalleryHome />
 
