@@ -124,7 +124,7 @@ export const Header = ({ }: {}) => {
             <nav>
               <div className={`${style.routes_div} ${mediaStyle.routes_div}`}>
                 <Link href={"/"} className={style.header_nav_link}><p>Home</p></Link>
-                <Link href={"#services"} className={style.header_nav_link}><p>Our Services</p></Link>
+                <Link href={"/en#services"} className={style.header_nav_link}><p>Our Services</p></Link>
                 <Link href={"/gallery"} className={style.header_nav_link}><p>Gallery</p></Link>
                 <Link href={"/about"} className={style.header_nav_link}><p>About us</p></Link>
               </div>

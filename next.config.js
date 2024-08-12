@@ -28,3 +28,6 @@ const nextConfig = {
 
 module.exports = withBundleAnalyzer(nextConfig);
 
+const withVideos = require('next-videos')
+
+module.exports = withVideos()
