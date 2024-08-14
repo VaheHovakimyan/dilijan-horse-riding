@@ -1,5 +1,6 @@
 'use client'
 
+import LoadingSpinner from "../../../shared/LoadingSpinner/LoadingSpinner";
 import style from "./SloganHome.module.scss";
 import mediaStyle from './SloganHomeMedia.module.scss';
 
@@ -12,7 +13,7 @@ export const SloganHome = ({ }: {}) => {
       </div>
 
       <video
-        src={require('../../../../../../../../public/horse_video_dilijan.mp4')}
+        src={require('../../../../../../../../public/horse_video.mp4')}
         loop
         autoPlay
         muted

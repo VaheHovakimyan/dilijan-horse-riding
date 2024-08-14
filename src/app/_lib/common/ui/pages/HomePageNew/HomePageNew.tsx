@@ -8,26 +8,29 @@ import SloganHome from "./sloganHome/SloganHome";
 import GalleryHome from "./galleryHome/GalleryHome";
 import { PartnerHome } from "./partnerHome/PartnerHome";
 
-
 interface IHomePageNew {
-  data:any
+  data: any
 }
 
-const HomePageNew:FC<IHomePageNew> = ({data}) => {
-  
 
-  
+// export const LangContext = createContext({lang: 1});
+
+const HomePageNew: FC<IHomePageNew> = ({ data }) => {
+  // const [lang, setLang] = useState<number>(1);
+
   return (
     <>
-      <WelcomeComponent />
+      {/* <LangContext.Provider value={{lang, setLang} as any}> */}
+        <WelcomeComponent />
 
-      <OurServicesHome />
+        <OurServicesHome />
 
-      <SloganHome />
+        <SloganHome />
 
-      <GalleryHome />
+        <GalleryHome />
 
-      <PartnerHome />
+        <PartnerHome />
+      {/* </LangContext.Provider> */}
     </>
   );
 };

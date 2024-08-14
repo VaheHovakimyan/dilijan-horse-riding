@@ -1,6 +1,6 @@
-'use client'
+"use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import Image from "next/image";
 
 import { Dropdown } from 'semantic-ui-react';
@@ -17,6 +17,9 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import Link from "next/link";
+import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
+import { LangContext } from "@/app/[lng]/layout";
+
 
 
 const langList = [
@@ -34,7 +37,7 @@ const langList = [
 export const Header = ({ }: {}) => {
 
   const [burgerBool, setBurgerBool] = useState<boolean>(false);
-
+  const { lang, setLang }: any = useContext(LangContext);
 
   useEffect(() => {
     if (burgerBool) {
@@ -130,10 +133,12 @@ export const Header = ({ }: {}) => {
               </div>
             </nav>
             <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
-              <select name="lang" id="lang" className={`${style.header_lang} ${mediaStyle.header_lang}`}>
-                <option value="am" className={style.header_lang_option}>🇦🇲&emsp;AM</option>
-                <option value="ru" className={style.header_lang_option}>🇷🇺&emsp;RU</option>
-                <option value="en" className={style.header_lang_option}>🇬🇧&emsp;EN</option>
+              <select name="lang" id="lang" onChange={(event) => {
+                setLang(+event.target.value);
+              }} className={`${style.header_lang} ${mediaStyle.header_lang}`}>
+                <option value={1} className={style.header_lang_option}>🇦🇲&emsp;AM</option>
+                <option value={2} className={style.header_lang_option}>🇷🇺&emsp;RU</option>
+                <option value={3} className={style.header_lang_option}>🇬🇧&emsp;EN</option>
               </select>
               <div className={`${style.header_contact} ${mediaStyle.header_contact}`}>
                 <a href="https://www.facebook.com/dilijanhorseriding/" target="_blank" className={style.header_social_icon_link}>
