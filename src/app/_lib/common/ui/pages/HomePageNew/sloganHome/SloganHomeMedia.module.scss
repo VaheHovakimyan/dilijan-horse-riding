@@ -5,11 +5,32 @@
 
 // Style
 
-// @include Laptop {
-//   .slogan_home_main {
-//     .slogan_home_opacity {
-//       .slogan_home_slogan {
-//       }
-//     }
-//   }
-// }
+@include Laptop {
+  .slogan_home_main {
+    .slogan_home_opacity {
+      .slogan_home_slogan {
+        font-size: 32px;
+      }
+    }
+  }
+}
+
+@include Bg_mobile {
+  .slogan_home_main {
+    .slogan_home_opacity {
+      .slogan_home_slogan {
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include St_mobile {
+  .slogan_home_main {
+    .slogan_home_opacity {
+      .slogan_home_slogan {
+        font-size: 15px;
+      }
+    }
+  }
+}

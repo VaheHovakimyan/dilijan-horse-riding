@@ -29,6 +29,13 @@ const AboutPage: FC<IAboutPage> = ({ data }) => {
           </div>
         </div>
 
+        <div className={`${style.about_page_image_text_div_second} ${mediaStyle.about_page_image_text_div_second}`}>
+          <img src={about_image_1.src} alt="about_image" className={`${style.about_page_image} ${mediaStyle.about_page_image}`} />
+          <div className={`${style.about_page_image_text} ${mediaStyle.about_page_image_text}`}>
+            {description}
+          </div>
+        </div>
+
         <div className={`${style.about_page_video_div} ${mediaStyle.about_page_video_div}`}>
           <iframe
             width={"100%"}
