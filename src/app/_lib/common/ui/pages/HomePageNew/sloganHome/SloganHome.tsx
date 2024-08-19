@@ -5,11 +5,18 @@ import style from "./SloganHome.module.scss";
 import mediaStyle from './SloganHomeMedia.module.scss';
 
 
-export const SloganHome = ({ }: {}) => {
+export const SloganHome = ({ data }: { data: any }) => {
   return (
     <div className={`${style.slogan_home_main} ${mediaStyle.slogan_home_main}`} style={{ paddingBottom: "700px" }}>
       <div className={`${style.slogan_home_opacity} ${mediaStyle.slogan_home_opacity}`}>
-        <h3 className={`${style.slogan_home_slogan} ${mediaStyle.slogan_home_slogan}`}>ՍԱՐԵՐ, ՁՈՐԵՐ ՈՒ ԼԻ՜ՔԸ ՍԵՐ</h3>
+        
+        <div className={`${style.slogan_home_slogan_laptop} ${mediaStyle.slogan_home_slogan_laptop}`}>
+          <p className={`${style.slogan_home_slogan_laptop_p} ${mediaStyle.slogan_home_slogan_laptop_p}`}>{data?.sloganLaptop?.first}</p>
+          <p className={`${style.slogan_home_slogan_laptop_p} ${mediaStyle.slogan_home_slogan_laptop_p}`}>{data?.sloganLaptop?.second}</p>
+          <p className={`${style.slogan_home_slogan_laptop_p} ${mediaStyle.slogan_home_slogan_laptop_p}`}>{data?.sloganLaptop?.third}</p>
+        </div>
+
+        <h3 className={`${style.slogan_home_slogan} ${mediaStyle.slogan_home_slogan}`}>{data?.title}</h3>
       </div>
 
       <video

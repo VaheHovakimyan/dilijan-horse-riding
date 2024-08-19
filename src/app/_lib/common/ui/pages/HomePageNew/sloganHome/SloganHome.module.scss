@@ -25,11 +25,20 @@
     top: 0%;
     left: 0%;
     transform: translate(0%, 0%);
+    .slogan_home_slogan_laptop {
+      display: none;
+      .slogan_home_slogan_laptop_p {
+        color: white;
+        font-size: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        letter-spacing: 0.9px;
+      }
+    }
     .slogan_home_slogan {
       color: white;
-      font-size: 54px;
+      font-size: 38px;
       font-family: Verdana, Geneva, Tahoma, sans-serif;
-      letter-spacing: 1px;
+      letter-spacing: 0.9px;
     }
   }
 }

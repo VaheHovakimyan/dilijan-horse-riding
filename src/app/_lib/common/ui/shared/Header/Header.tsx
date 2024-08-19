@@ -51,7 +51,6 @@ export const Header = ({ }: {}) => {
     };
   }, [burgerBool]);
 
-
   return (
     <div className={`${style.header} ${mediaStyle.header}`}>
       <header>
@@ -94,9 +93,26 @@ export const Header = ({ }: {}) => {
                 <Link href={"/about"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
                   <span className={style.header_nav_link_text}>About us</span>
                 </Link>
+                <select value={lang} name="lang" id="lang" onChange={(event) => {
+                  setLang(+event.target.value);
+                }} className={`${style.header_lang} ${mediaStyle.header_lang}`}>
+                  <option value={1} className={style.header_lang_option}>🇦🇲&emsp;AM</option>
+                  <option value={2} className={style.header_lang_option}>🇷🇺&emsp;RU</option>
+                  <option value={3} className={style.header_lang_option}>🇬🇧&emsp;EN</option>
+                </select>
               </div>
             </nav>
           </div>
+
+          {/* <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
+            <select value={lang} name="lang" id="lang" onChange={(event) => {
+              setLang(+event.target.value);
+            }} className={`${style.header_lang} ${mediaStyle.header_lang}`}>
+              <option value={1} className={style.header_lang_option}>🇦🇲&emsp;AM</option>
+              <option value={2} className={style.header_lang_option}>🇷🇺&emsp;RU</option>
+              <option value={3} className={style.header_lang_option}>🇬🇧&emsp;EN</option>
+            </select>
+          </div> */}
 
           <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
             <div className={style.header_contact}>
@@ -133,7 +149,7 @@ export const Header = ({ }: {}) => {
               </div>
             </nav>
             <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
-              <select name="lang" id="lang" onChange={(event) => {
+              <select value={lang} name="lang" id="lang" onChange={(event) => {
                 setLang(+event.target.value);
               }} className={`${style.header_lang} ${mediaStyle.header_lang}`}>
                 <option value={1} className={style.header_lang_option}>🇦🇲&emsp;AM</option>
