@@ -37,18 +37,24 @@ const ourServices = [
   },
 ];
 
-export const OurServicesHome = ({ }: {}) => {
+export const OurServicesHome = ({data}: {data: any}) => {
+
+
+  console.log(data);
+  
 
   return (
     <div className={`${style.our_services_home_main} ${mediaStyle.our_services_home_main}`} id="services">
-      <h3 className={`${style.our_services_home_title} ${mediaStyle.our_services_home_title}`}>Our Services</h3>
+      <h3 className={`${style.our_services_home_title} ${mediaStyle.our_services_home_title}`}>{data?.title}</h3>
       <div className={`${style.our_services_home_flex} ${mediaStyle.our_services_home_flex}`}>
-        {ourServices.map((item) => {
+        {data?.serviceItems?.map((item: any, index:number) => {
+          console.log("item", item);
+          
           return (
-            <div key={item.id} className={`${style.our_services_home_item} ${mediaStyle.our_services_home_item}`}>
-              <div className={`${style.our_services_home_item_opacity} ${mediaStyle.our_services_home_item_opacity}`} style={{ backgroundImage: `url('${item.image}')` }} >
+            <div key={index} className={`${style.our_services_home_item} ${mediaStyle.our_services_home_item}`}>
+              <div className={`${style.our_services_home_item_opacity} ${mediaStyle.our_services_home_item_opacity}`} style={{ backgroundImage: `url(${item.image})` }} >
                 <div className={`${style.our_services_home_item_p_center} ${mediaStyle.our_services_home_item_p_center}`}>
-                  <p className={`${style.our_services_home_item_p} ${mediaStyle.our_services_home_item_p}`}>{item.title}</p>
+                  <p className={`${style.our_services_home_item_p} ${mediaStyle.our_services_home_item_p}`}>{item.name}</p>
                 </div>
               </div>
             </div>

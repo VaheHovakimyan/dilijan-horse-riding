@@ -5,50 +5,9 @@ import React, { useContext } from "react";
 import style from "./WelcomeComponent.module.scss";
 import mediaStyle from './WelcomeComponentMedia.module.scss';
 import Link from "next/link";
-import { LangContext } from "@/app/[lng]/layout";
 
 
-const welcome_data_en = {
-  description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Repellendus non culpa perspiciatis ad id ab. Sint error
-            inventore possimus? Enim ducimus fugit ratione eius a
-            facilis totam voluptas sint esse?`,
-  services: "Our Services"
-}
-
-const welcome_data_ru = {
-  description: `Русский Русский Русский Русский Русский Русский Русский
-   Русский Русский Русский Русский Русский Русский Русский Русский 
-   Русский Русский Русский Русский Русский `,
-  services: "Наши услуги"
-}
-
-const welcome_data_am = {
-  description: `Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն
-   Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն 
-   Հայերեն Հայերեն Հայերեն Հայերեն Հայերեն`,
-  services: "Մեր ծառայությունները"
-}
-
-export const WelcomeComponent = ({ }: {}) => {
-  const { lang, setLang }: any = useContext(LangContext);
-
-  let data;
-
-  switch (lang) {
-    case 1:
-       data = welcome_data_am;
-      break;
-    case 2:
-       data = welcome_data_ru;
-      break;
-    case 3:
-       data = welcome_data_en;
-      break;
-    default:
-      console.error("Error with language");
-      break;
-  }
+export const WelcomeComponent = ({data}: {data:any}) => {
 
 
   return (
