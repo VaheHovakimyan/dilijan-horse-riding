@@ -14,7 +14,7 @@ interface IAboutPage {
 
 const AboutPage: FC<IAboutPage> = ({ data }) => {
 
-  console.log(data);
+  // console.log(data);
 
 
   return (

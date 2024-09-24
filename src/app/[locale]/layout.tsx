@@ -1,14 +1,12 @@
-"use client";
-
-
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Footer, Header } from "../_lib/common/ui";
-import { languages } from '../i18n/settings'
+// import { languages } from '../i18n/settings'
 
 import website_icon from "../_lib/common/ui/assets/icons/website_title_icons/website_title_icon.png";
 import AllRights from "../_lib/common/ui/shared/AllRights/AllRights";
-import { createContext, useState } from "react";
+import { NextIntlClientProvider } from 'next-intl'
+import { getMessages } from 'next-intl/server'
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -16,8 +14,6 @@ const inter = Inter({ subsets: ["latin"] });
 
 //   return languages.map((lng) => ({ lng }))
 // }
-
-export const LangContext = createContext({lang: 1});
 
 // export const metadata: Metadata = {
 //   title: "Dilijan Horse Riding",
@@ -30,7 +26,7 @@ export const LangContext = createContext({lang: 1});
 //   },
 // };
 
-const RootLayout = ({
+const RootLayout = async ({
   children,
   params: {
     lng
@@ -42,19 +38,21 @@ const RootLayout = ({
   }
 }>) => {
 
-  const [lang, setLang] = useState<number>(1);
+
+  
+  // const messages = await getMessages();
 
   return (
+    // <NextIntlClientProvider messages={messages}>
     <html lang={lng}>
       <body className={inter.className}>
-        <LangContext.Provider value={{ lang, setLang } as any}>
           <Header />
           <main>{children}</main>
           <Footer />
           {/* <AllRights /> */}
-        </LangContext.Provider>
       </body>
     </html>
+    // </NextIntlClientProvider>
   );
 };
 
