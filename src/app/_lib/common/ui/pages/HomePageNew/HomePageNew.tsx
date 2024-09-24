@@ -7,7 +7,6 @@ import OurServicesHome from "./ourServices/OurServicesHome";
 import SloganHome from "./sloganHome/SloganHome";
 import GalleryHome from "./galleryHome/GalleryHome";
 import { PartnerHome } from "./partnerHome/PartnerHome";
-import { LangContext } from "@/app/[lng]/layout";
 
 interface IHomePageNew {
   data: any
@@ -156,33 +155,31 @@ const welcome_data_am = {
 
 const HomePageNew: FC<IHomePageNew> = ({ data }) => {
 
-  const { lang, setLang }: any = useContext(LangContext);
+  // let data_lang;
 
-  let data_lang;
-
-  switch (lang) {
-    case 1:
-      data_lang = welcome_data_am;
-      break;
-    case 2:
-      data_lang = welcome_data_ru;
-      break;
-    case 3:
-      data_lang = welcome_data_en;
-      break;
-    default:
-      console.error("Error with language");
-      break;
-  }
+  // switch (lang) {
+  //   case 1:
+  //     data_lang = welcome_data_am;
+  //     break;
+  //   case 2:
+  //     data_lang = welcome_data_ru;
+  //     break;
+  //   case 3:
+  //     data_lang = welcome_data_en;
+  //     break;
+  //   default:
+  //     console.error("Error with language");
+  //     break;
+  // }
 
 
   return (
     <>
-      <WelcomeComponent data={data_lang?.welcome} />
+      <WelcomeComponent />
 
-      <OurServicesHome data={data_lang?.services}/>
+      <OurServicesHome />
 
-      <SloganHome data={data_lang?.sloganHome} />
+      <SloganHome />
 
       <GalleryHome />
 

@@ -4,6 +4,7 @@ import dynamic from "next/dynamic";
 import "../_lib/common/ui/scss/index.scss";
 import Head from "next/head";
 import { createContext, useContext, useState } from "react";
+import ServerComp from "../sc/ServerComponent";
 
 const HomePageNew = dynamic(
   () => import("../_lib/common/ui/pages/HomePageNew/HomePageNew")

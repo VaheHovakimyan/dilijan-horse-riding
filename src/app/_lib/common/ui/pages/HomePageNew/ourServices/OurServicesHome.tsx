@@ -37,18 +37,15 @@ const ourServices = [
   },
 ];
 
-export const OurServicesHome = ({data}: {data: any}) => {
+export const OurServicesHome = () => {
 
 
-  console.log(data);
-  
 
   return (
     <div className={`${style.our_services_home_main} ${mediaStyle.our_services_home_main}`} id="services">
-      <h3 className={`${style.our_services_home_title} ${mediaStyle.our_services_home_title}`}>{data?.title}</h3>
+      <h3 className={`${style.our_services_home_title} ${mediaStyle.our_services_home_title}`}>Our Services</h3>
       <div className={`${style.our_services_home_flex} ${mediaStyle.our_services_home_flex}`}>
-        {data?.serviceItems?.map((item: any, index:number) => {
-          console.log("item", item);
+        {ourServices?.map((item: any, index:number) => {
           
           return (
             <div key={index} className={`${style.our_services_home_item} ${mediaStyle.our_services_home_item}`}>

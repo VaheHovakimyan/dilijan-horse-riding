@@ -1,8 +1,8 @@
-/** @type {import('next').NextConfig} */
+// /** @type {import('next').NextConfig} */
 
-const withBundleAnalyzer = require("@next/bundle-analyzer")({
-  enabled: process.env.ANALYZE === "true",
-});
+// const withBundleAnalyzer = require("@next/bundle-analyzer")({
+//   enabled: process.env.ANALYZE === "true",
+// });
 
 const nextConfig = {
 //   env: {
@@ -26,7 +26,14 @@ const nextConfig = {
 
 };
 
-module.exports = withBundleAnalyzer(nextConfig);
+// module.exports = withBundleAnalyzer(nextConfig);
+
+
+// const createNextIntlPlugin = require('next-intl/plugin');
+// const withNextIntl = createNextIntlPlugin();
+
+// module.exports = withNextIntl(nextConfig);
+
 
 const withVideos = require('next-videos')
 

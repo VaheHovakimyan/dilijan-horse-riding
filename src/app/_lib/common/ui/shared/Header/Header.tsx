@@ -18,7 +18,6 @@ import InstagramIcon from '@mui/icons-material/Instagram';
 import TelegramIcon from '@mui/icons-material/Telegram';
 import Link from "next/link";
 import LoadingSpinner from '../LoadingSpinner/LoadingSpinner';
-import { LangContext } from "@/app/[lng]/layout";
 
 
 
@@ -37,7 +36,6 @@ const langList = [
 export const Header = ({ }: {}) => {
 
   const [burgerBool, setBurgerBool] = useState<boolean>(false);
-  const { lang, setLang }: any = useContext(LangContext);
 
   useEffect(() => {
     if (burgerBool) {
@@ -93,8 +91,8 @@ export const Header = ({ }: {}) => {
                 <Link href={"/about"} className={style.header_nav_link} onClick={() => setBurgerBool(!burgerBool)}>
                   <span className={style.header_nav_link_text}>About us</span>
                 </Link>
-                <select value={lang} name="lang" id="lang" onChange={(event) => {
-                  setLang(+event.target.value);
+                <select name="lang" id="lang" onChange={(event) => {
+                   console.log(+event.target.value);
                 }} className={`${style.header_lang} ${mediaStyle.header_lang}`}>
                   <option value={1} className={style.header_lang_option}>🇦🇲&emsp;AM</option>
                   <option value={2} className={style.header_lang_option}>🇷🇺&emsp;RU</option>
@@ -149,8 +147,8 @@ export const Header = ({ }: {}) => {
               </div>
             </nav>
             <div className={`${style.header_contact_lang} ${mediaStyle.header_contact_lang}`}>
-              <select value={lang} name="lang" id="lang" onChange={(event) => {
-                setLang(+event.target.value);
+              <select name="lang" id="lang" onChange={(event) => {
+               console.log(+event.target.value);
               }} className={`${style.header_lang} ${mediaStyle.header_lang}`}>
                 <option value={1} className={style.header_lang_option}>🇦🇲&emsp;AM</option>
                 <option value={2} className={style.header_lang_option}>🇷🇺&emsp;RU</option>
