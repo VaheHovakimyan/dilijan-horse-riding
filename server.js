@@ -1,34 +1,25 @@
-const { createServer } = require('http')
-const { parse } = require('url')
-const next = require('next')
-const dev = process.env.NODE_ENV !== 'production'
-const hostname = 'localhost'
-const port = process.env.port || 3000
-const app = next({ dev, hostname, port })
-const handle = app.getRequestHandler()
-app.prepare().then(() => {
-    createServer(async (req, res) => {
-        try {
-            const parsedUrl = parse(req.url, true)
-            const { pathname, query } = parsedUrl
-            if (pathname === '/a') {
-                await app.render(req, res, '/a', query)
-            } else if (pathname === '/b') {
-                await app.render(req, res, '/b', query)
-            } else {
-                await handle(req, res, parsedUrl)
-            }
-        } catch (err) {
-            console.error('Error occurred handling', req.url, err)
-            res.statusCode = 500
-            res.end('internal server error')
-        }
-    })
-        .once('error', (err) => {
-            console.error(err)
-            process.exit(1)
-        })
-        .listen(port, () => {
-            console.log(`> Ready on http://${hostname}:${port}`)
-        })
-})
+const next = require('next');
+const express = require('express');
+const path = require('path');
+
+const dev = process.env.NODE_ENV !== 'production';
+const nextApp = next({ dev });
+const handle = nextApp.getRequestHandler();
+
+nextApp.prepare().then(() => {
+  const app = express();
+  
+  // Serve static files if needed
+  app.use(express.static(path.join(__dirname, 'public')));
+
+  // Handle all other requests with Next.js
+  app.all('*', (req, res) => {
+    return handle(req, res);
+  });
+
+  const port = process.env.PORT || 3000;
+  app.listen(port, (err) => {
+    if (err) throw err;
+    console.log(`> Ready on http://localhost:${port}`);
+  });
+});
