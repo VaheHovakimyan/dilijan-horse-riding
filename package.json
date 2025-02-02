@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "NODE_ENV=production node server.js",
     "lint": "next lint"
   },
   "dependencies": {
@@ -22,8 +22,7 @@
     "i18next-resources-to-backend": "^1.2.1",
     "next": "^14.2.3",
     "next-i18next": "^15.3.0",
-    "next-intl": "^3.19.1",
-    "next-videos": "^1.4.1",
+    "next-intl": "^3.26.3",
     "react": "^18",
     "react-dom": "^18",
     "sass": "^1.77.4",

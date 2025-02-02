@@ -1,5 +1,5 @@
 
-import AboutPage from "@/app/_lib/common/ui/pages/AboutPage/AboutPage";
+import AboutPage from "../../_lib/common/ui/pages/AboutPage/AboutPage";
 import Head from "next/head";
 
 

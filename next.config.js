@@ -1,40 +1,10 @@
-// /** @type {import('next').NextConfig} */
-
-// const withBundleAnalyzer = require("@next/bundle-analyzer")({
-//   enabled: process.env.ANALYZE === "true",
-// });
-
+/** @type {import('next').NextConfig} */
 const nextConfig = {
-//   env: {
-//     googleAnalyticsID: "G-MK2YDLVJBY",
-//   },
-
-  // i18n,
-
-  // reactStrictMode: true,
-  // swcMinify: false,
-  generateBuildId: async () => {
-    // You can, for example, get the latest git commit hash here
-    let id = String(Date.now());
-    return id;
+  output: "standalone", // Enables a single executable for the server
+  reactStrictMode: true,
+  experimental: {
+    serverActions: true, // Needed for server-side actions in Next.js 14
   },
-
-  devIndicators: {
-    buildActivityPosition: "top-right",
-  },
-
-
 };
 
-// module.exports = withBundleAnalyzer(nextConfig);
-
-
-// const createNextIntlPlugin = require('next-intl/plugin');
-// const withNextIntl = createNextIntlPlugin();
-
-// module.exports = withNextIntl(nextConfig);
-
-
-const withVideos = require('next-videos')
-
-module.exports = withVideos()
+module.exports = nextConfig

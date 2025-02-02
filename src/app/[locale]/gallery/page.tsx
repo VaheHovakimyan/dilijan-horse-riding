@@ -1,5 +1,4 @@
-import GalleryPage from "@/app/_lib/common/ui/pages/GalleryPage/GalleryPage";
-import Head from "next/head";
+import GalleryPage from "../../_lib/common/ui/pages/GalleryPage/GalleryPage";
 
 
 export default async function Gallery({params}:any) {

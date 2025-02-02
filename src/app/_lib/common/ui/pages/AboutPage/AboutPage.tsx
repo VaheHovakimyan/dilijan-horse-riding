@@ -4,8 +4,9 @@ import React, { FC } from "react";
 import style from "./AboutPage.module.scss";
 import mediaStyle from './AboutPageMedia.module.scss';
 import PageTitleComponent from "../../shared/PageTitleComponent/PageTitleComponent";
-import { description } from "@/app/constants";
+
 import about_image_1 from '../../assets/images/about/about_main.webp';
+import { description } from "../../../../../constants";
 
 
 interface IAboutPage {

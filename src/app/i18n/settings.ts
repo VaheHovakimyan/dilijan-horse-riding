@@ -1,17 +1,17 @@
-// export const fallbackLng = 'ru'
-// export const languages = [fallbackLng, 'ru','en']
+export const fallbackLng = 'ru'
+export const languages = [fallbackLng, 'am','en']
 
-// export const defaultNS = 'translation'
-// export const cookieName = 'i18next'
+export const defaultNS = 'translation'
+export const cookieName = 'i18next'
 
-// export function getOptions (lng = fallbackLng, ns = defaultNS) {
-//   return {
-//     // debug: true,
-//     supportedLngs: languages,
-//     fallbackLng,
-//     lng,
-//     fallbackNS: defaultNS,
-//     defaultNS,
-//     ns
-//   }
-// }
+export function getOptions (lng = fallbackLng, ns = defaultNS) {
+  return {
+    // debug: true,
+    supportedLngs: languages,
+    fallbackLng,
+    lng,
+    fallbackNS: defaultNS,
+    defaultNS,
+    ns
+  }
+}
